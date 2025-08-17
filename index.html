@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniii Intelligence</title>
+    <title>Valen-tin-tin Intelligence</title>
     <link rel="shortcut icon" href="images/fav.png" type="image/png">
     <style>
         :root {
@@ -54,7 +54,7 @@
             height: 16px;
         }
         
-        #Aniii-container {
+        #Valen-tin-tin-container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -65,7 +65,7 @@
 
         }
         
-        #Aniii-img {
+        #Valen-tin-tin-img {
           width: 400px;
     height: 340px;
             object-fit: contain;
@@ -74,11 +74,11 @@
             transition: transform 0.3s;
         }
         
-        #Aniii-img:hover {
+        #Valen-tin-tin-img:hover {
             transform: scale(1.05);
         }
         
-        #Aniii-chat {
+        #Valen-tin-tin-chat {
             background-color: var(--black);
             color: var(--white);
             border: 2px solid var(--black);
@@ -160,7 +160,7 @@
 </head>
 <body>
     <header>
-        <h1>Aniii Intelligence Model</h1>
+        <h1>Valen-tin-tin Intelligence Model</h1>
         <a href="https://x.com/AstrinTh3/status/1956648427808276765" class="x-link" target="_blank">
             <svg class="x-icon" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
@@ -171,20 +171,20 @@
     
     <p style="text-align: center; margin-bottom: 30px;">Something you did not expect</p>
     
-    <div id="Aniii-container">
-        <img id="Aniii-img" src="images/fav.png" alt="Angry Aniii">
-        <div id="Aniii-chat">
-            > Meet ANIiii the crazy sister of Any.
+    <div id="Valen-tin-tin-container">
+        <img id="Valen-tin-tin-img" src="images/fav.png" alt="Angry Valen-tin-tin">
+        <div id="Valen-tin-tin-chat">
+            > Valen-tin-tin is the silly brother of Valentin.
         </div>
     </div>
     
     <div id="input-container">
         <input type="text" id="user-input" placeholder="Type your message here... (not that I care)">
-        <button onclick="talkToAniii()">ASK Aniii</button>
+        <button onclick="talkToValen-tin-tin()">ASK Valen-tin-tin</button>
     </div>
     
     <footer>
-        Warning: you might be a schizo talkin to a Aniii
+        Warning: you might be a schizo talkin to a Valen-tin-tin
     </footer>
     
     <script>
@@ -211,34 +211,34 @@
             "Congratulations! You found the most sarcastic kitchen appliance"
         ];
         
-        function talkToAniii() {
+        function talkToValen-tin-tin() {
             const input = document.getElementById('user-input').value;
-            const Aniii = document.getElementById('Aniii-chat');
-            const AniiiImg = document.getElementById('Aniii-img');
+            const Valen-tin-tin = document.getElementById('Valen-tin-tin-chat');
+            const Valen-tin-tinImg = document.getElementById('Valen-tin-tin-img');
             
             // Add typing animation
-            Aniii.innerHTML = "> _Typing";
-            Aniii.classList.add('typing');
-            AniiiImg.src = "./fav.png"; // "active" Aniii
+            Valen-tin-tin.innerHTML = "> _Typing";
+            Valen-tin-tin.classList.add('typing');
+            Valen-tin-tinImg.src = "./fav.png"; // "active" Valen-tin-tin
             
             setTimeout(() => {
                 if (!input.trim()) {
-                    Aniii.innerHTML = "> Wow. Silence. How original.";
+                    Valen-tin-tin.innerHTML = "> Wow. Silence. How original.";
                 } else {
-                    Aniii.innerHTML = `> ${responses[Math.floor(Math.random() * responses.length)]}`;
+                    Valen-tin-tin.innerHTML = `> ${responses[Math.floor(Math.random() * responses.length)]}`;
                 }
                 
                 document.getElementById('user-input').value = '';
-                Aniii.classList.remove('typing');
+                Valen-tin-tin.classList.remove('typing');
                 
-                // Random chance to show different Aniii states
+                // Random chance to show different Valen-tin-tin states
                 const randomState = Math.random();
                 if (randomState > 0.8) {
-                    AniiiImg.src = "./fav.png"; // angry
+                    Valen-tin-tinImg.src = "./fav.png"; // angry
                 } else if (randomState > 0.6) {
-                    AniiiImg.src = "./fav.png"; // happy
+                    Valen-tin-tinImg.src = "./fav.png"; // happy
                 } else {
-                    AniiiImg.src = "./fav.png"; // normal
+                    Valen-tin-tinImg.src = "./fav.png"; // normal
                 }
                 
             }, 800 + Math.random() * 1500); // Random response delay
@@ -247,7 +247,7 @@
         // Send on Enter
         document.getElementById('user-input').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
-                talkToAniii();
+                talkToValen-tin-tin();
             }
         });
     </script>
